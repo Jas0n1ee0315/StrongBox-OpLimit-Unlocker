@@ -115,6 +115,13 @@ tools/
   patch_dex.py     regenerates classes.dex.patched from an original dex
 ```
 
-## Credits
+## License
 
-Patch approach inspired by upstream TEESimulator-RS issue/PR discussion (#39, #49, #59, #81).
+GPL-3.0 — see [LICENSE](LICENSE) and [NOTICE](NOTICE).
+
+`module/classes.dex.patched` is a binary-patched derivative of
+[TEESimulator-RS](https://github.com/Enginex0/TEESimulator-RS) (GPL-3.0), so
+this module is also distributed under **GPL-3.0**. Upstream (corresponding
+source) and credits: TEESimulator-RS by Enginex0, a fork of
+[JingMatrix/TEESimulator](https://github.com/JingMatrix/TEESimulator). Patch
+approach informed by upstream issues/PRs #39, #49, #59, #81.

@@ -1,0 +1,18 @@
+StrongBox Op-Limit Unlocker
+Copyright (C) 2026 Jason
+
+Licensed under the GNU General Public License v3.0 — see LICENSE.
+
+This module redistributes a binary-patched copy of `classes.dex` from:
+
+  TEESimulator-RS — https://github.com/Enginex0/TEESimulator-RS
+  Copyright (C) Enginex0, licensed under GPL-3.0
+  (itself a fork of JingMatrix/TEESimulator —
+   https://github.com/JingMatrix/TEESimulator)
+
+The only change is a 2-byte edit to
+KeyMintSecurityLevelInterceptor.trackAndEnforceOpLimit that makes the
+StrongBox concurrent-operation limit check always pass (lifting the
+hardcoded cap of 4). The exact transformation is documented in README.md
+and reproducible with tools/patch_dex.py. Corresponding source for
+TEESimulator-RS is available at the URL above.
