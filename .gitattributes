@@ -1,0 +1,4 @@
+* text=auto eol=lf
+*.patched binary
+*.dex binary
+*.zip binary

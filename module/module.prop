@@ -1,0 +1,6 @@
+id=strongbox_oplimit_unlock
+name=StrongBox Op-Limit Unlocker
+version=v1.0
+versionCode=1
+author=Jason
+description=Lifts the per-UID StrongBox concurrent-operation limit (hardcoded 4) enforced by TEESimulator-RS / tricky_store v6.0.1-307. That limit makes StrongBox-backed apps crash on launch with KeyStoreException TOO_MANY_OPERATIONS (e.g. androidx EncryptedSharedPreferences / MasterKey users). Hash-gated: only patches the known original dex; safely skips any other version.
